@@ -12,7 +12,6 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   return `# ${data.title}
-## Title
  ${data.description}
 `;
 }
@@ -20,15 +19,21 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-## Description
+## Title
  ${data.description}
 `;
 }
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.userStory}
 ## User Story
  ${data.userStory}
+`;
+}
+function generateMarkdown(data) {
+  return `# ${data.description}
+## Description
+ ${data.description}
 `;
 }
 
